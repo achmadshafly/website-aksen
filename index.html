@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Akademika Semesta Nusantara (AKSEN) — lembaga yang mewadahi ilmuwan, praktisi, dan aktivis sosial untuk membantu mencarikan solusi atas persoalan sosial kemasyarakatan.">
+  <meta name="theme-color" content="#1D4ED8">
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="AKSEN — Akademika Semesta Nusantara">
+  <meta property="og:description" content="Empowering the Community, Enlightening the Future.">
+  <meta property="og:url"         content="https://aksen.or.id">
+  <meta property="og:image"       content="https://aksen.or.id/assets/images/og-image.jpg">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="AKSEN — Akademika Semesta Nusantara">
+  <link rel="canonical" href="https://aksen.or.id">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/i18n.css">
+  <link rel="stylesheet" href="css/home.css">
+  <title>AKSEN — Akademika Semesta Nusantara | Empowering the Community</title>
+</head>
+<body>
+
+  <div class="loader" id="loader"><div class="loader__spinner"></div></div>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ═══════════════ NAVIGATION | wp:group {"tagName":"header"} -->
+  <header>
+    <nav class="nav" data-nav role="navigation" aria-label="Navigasi utama" data-i18n-aria="nav.aria">
+      <div class="container nav__inner">
+        <a href="index.html" class="nav__logo" aria-label="AKSEN – Beranda">
+          <span class="nav__logo-icon">A</span>
+          <span>AKSEN</span>
+        </a>
+        <div class="nav__links">
+          <a href="index.html"       class="nav__link active" data-i18n="nav.home">Beranda</a>
+          <a href="profile.html"     class="nav__link"        data-i18n="nav.profile">Profil</a>
+          <a href="program.html"     class="nav__link"        data-i18n="nav.programs">Program</a>
+          <a href="publication.html" class="nav__link"        data-i18n="nav.publications">Publikasi</a>
+          <a href="contact.html"     class="nav__link"        data-i18n="nav.contact">Kontak</a>
+        </div>
+        <button class="lang-toggle" data-lang-toggle data-active-lang="id" aria-label="Beralih ke Bahasa Inggris" title="Switch language / Ganti bahasa">
+          <span class="lang-toggle__pill"></span>
+          <span class="lang-toggle__label">ID</span>
+          <span class="lang-toggle__label">EN</span>
+        </button>
+        <a href="contact.html" class="nav__cta" data-i18n="nav.cta">Hubungi Kami</a>
+        <button class="nav__toggle" data-menu-toggle aria-label="Buka menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="nav__mobile" data-mobile-menu>
+    <a href="index.html"       data-i18n="nav.home">Beranda</a>
+    <a href="profile.html"     data-i18n="nav.profile">Profil</a>
+    <a href="program.html"     data-i18n="nav.programs">Program</a>
+    <a href="publication.html" data-i18n="nav.publications">Publikasi</a>
+    <a href="contact.html"     data-i18n="nav.contact">Kontak</a>
+    <button class="lang-toggle" data-lang-toggle data-active-lang="id" aria-label="Ganti bahasa">
+      <span class="lang-toggle__pill"></span>
+      <span class="lang-toggle__label">ID</span>
+      <span class="lang-toggle__label">EN</span>
+    </button>
+  </div>
+
+  <main id="main" role="main">
+
+    <!-- ═══════════════ HERO | wp:cover -->
+    <section class="hero" id="hero">
+      <div class="hero__pattern"></div>
+      <div class="hero__grid"></div>
+      <div class="hero__particles">
+        <div class="hero__particle"></div><div class="hero__particle"></div>
+        <div class="hero__particle"></div><div class="hero__particle"></div>
+        <div class="hero__particle"></div><div class="hero__particle"></div>
+        <div class="hero__particle"></div><div class="hero__particle"></div>
+      </div>
+
+      <div class="container hero__layout">
+        <!-- Left column: Text Content -->
+        <div class="hero__content">
+          <div class="hero__tag">
+            <span class="pulse"></span>
+            <span data-i18n="home.hero.tag">Lembaga Riset &amp; Advokasi Sosial</span>
+          </div>
+          <h1 class="hero__title">
+            <span data-i18n-html="home.hero.title">Empowering the <em>Community</em>,<br>Enlightening the <em>Future</em></span>
+          </h1>
+          <p class="hero__text" data-i18n="home.hero.text">
+            Akademika Semesta Nusantara (AKSEN) adalah lembaga yang mewadahi ilmuwan, praktisi, dan aktivis sosial untuk membantu mencarikan solusi atas persoalan sosial kemasyarakatan, serta melakukan perencanaan sosial yang matang.
+          </p>
+          <div class="hero__actions">
+            <a href="profile.html" class="btn btn--primary btn--lg">
+              <span data-i18n="home.hero.cta1">Tentang Kami</span>
+              <svg class="btn__arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="program.html" class="btn btn--ghost btn--lg">
+              <span data-i18n="home.hero.cta2">Lihat Program</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right column: Carousel positioned center-right -->
+        <div class="hero__carousel-col">
+        <!-- Pillar Cards Carousel -->
+        <div class="hero-carousel" id="heroCarousel">
+        <div class="hero-carousel__wrapper">
+          <div class="hero-carousel__slide active" data-slide="0">
+            <div class="hero-carousel__icon-wrap" style="background:linear-gradient(135deg,#1D4ED8,#1E3A8A);height:160px;border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;font-size:3.5rem;margin-bottom:var(--space-4);color:rgba(255,255,255,0.8)">🎓</div>
+            <span class="hero-carousel__tag" data-i18n="home.pillar1.title">Pendidikan</span>
+            <h3 class="hero-carousel__title" data-i18n="home.pillar1.title">Pendidikan</h3>
+            <p class="hero-carousel__text" data-i18n="home.pillar1.text">Memberikan layanan pendidikan dan pelatihan pada masyarakat sebagai upaya transformasi pengetahuan yang berkelanjutan.</p>
+            <div class="hero-carousel__footer">
+              <a href="program.html" class="hero-carousel__link">
+                <span data-i18n="home.pillar1.link">Lihat Program</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="hero-carousel__slide" data-slide="1">
+            <div class="hero-carousel__icon-wrap" style="background:linear-gradient(135deg,#E65100,#F57C00);height:160px;border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;font-size:3.5rem;margin-bottom:var(--space-4);color:rgba(255,255,255,0.8)">🤝</div>
+            <span class="hero-carousel__tag" data-i18n="home.pillar2.title">Pemberdayaan</span>
+            <h3 class="hero-carousel__title" data-i18n="home.pillar2.title">Pemberdayaan</h3>
+            <p class="hero-carousel__text" data-i18n="home.pillar2.text">Melakukan pemberdayaan, pendampingan, dan pengembangan komunitas agar masyarakat mampu berkembang secara mandiri dan berdaya.</p>
+            <div class="hero-carousel__footer">
+              <a href="program.html" class="hero-carousel__link">
+                <span data-i18n="home.pillar2.link">Lihat Program</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="hero-carousel__slide" data-slide="2">
+            <div class="hero-carousel__icon-wrap" style="background:linear-gradient(135deg,#1565C0,#1976D2);height:160px;border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;font-size:3.5rem;margin-bottom:var(--space-4);color:rgba(255,255,255,0.8)">🔬</div>
+            <span class="hero-carousel__tag" data-i18n="home.pillar3.title">Penelitian</span>
+            <h3 class="hero-carousel__title" data-i18n="home.pillar3.title">Penelitian</h3>
+            <p class="hero-carousel__text" data-i18n="home.pillar3.text">Melakukan penelitian ilmiah, publikasi, dan pelatihan academic writing terkait pengembangan pengetahuan sosial kemasyarakatan.</p>
+            <div class="hero-carousel__footer">
+              <a href="program.html" class="hero-carousel__link">
+                <span data-i18n="home.pillar3.link">Lihat Program</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="hero-carousel__controls">
+          <button class="hero-carousel__btn" data-carousel-prev aria-label="Sebelumnya">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          </button>
+          <div class="hero-carousel__dots">
+            <button class="hero-carousel__dot active" data-dot="0" aria-label="Slide 1"></button>
+            <button class="hero-carousel__dot"        data-dot="1" aria-label="Slide 2"></button>
+            <button class="hero-carousel__dot"        data-dot="2" aria-label="Slide 3"></button>
+          </div>
+          <button class="hero-carousel__btn" data-carousel-next aria-label="Selanjutnya">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+        </div><!-- /.hero__carousel-col -->
+      </div><!-- /.hero__layout -->
+
+      <div class="hero__scroll">
+        <span data-i18n="home.hero.scroll">Gulir</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ MARQUEE | wp:html -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__inner">
+        <span class="marquee__item">Pendidikan <span class="dot"></span></span>
+        <span class="marquee__item">Pemberdayaan <span class="dot"></span></span>
+        <span class="marquee__item">Penelitian <span class="dot"></span></span>
+        <span class="marquee__item">Keagamaan <span class="dot"></span></span>
+        <span class="marquee__item">Lingkungan <span class="dot"></span></span>
+        <span class="marquee__item">Gender &amp; HAM <span class="dot"></span></span>
+        <span class="marquee__item">UMKM <span class="dot"></span></span>
+        <span class="marquee__item">Hukum &amp; Keluarga <span class="dot"></span></span>
+        <span class="marquee__item">Sosial &amp; Budaya <span class="dot"></span></span>
+        <span class="marquee__item">Pendidikan <span class="dot"></span></span>
+        <span class="marquee__item">Pemberdayaan <span class="dot"></span></span>
+        <span class="marquee__item">Penelitian <span class="dot"></span></span>
+      </div>
+    </div>
+
+    <!-- ═══════════════ SIAPA KAMI | wp:group {"className":"section-about"} -->
+    <section class="section" id="about">
+      <div class="container">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-16);align-items:center">
+          <div data-reveal="left">
+            <span class="section-label" data-i18n="home.about.label">Siapa Kami</span>
+            <h2 class="section-title" data-i18n="home.about.title">Mengenal AKSEN</h2>
+            <div class="divider"></div>
+            <p style="margin-bottom:var(--space-4)" data-i18n="home.about.text1">AKSEN hadir memberikan layanan pendidikan, pengembangan komunitas sosial, dan penelitian. Lembaga ini hadir sebagai bentuk respon perubahan sosial, sembari memberikan antisipasi (mitigasi) dampak perubahan yang akan dialami oleh masyarakat.</p>
+            <p style="margin-bottom:var(--space-8)" data-i18n-html="home.about.text2">AKSEN memiliki komitmen dalam mewujudkan <em>good governance</em> dengan memberikan pendidikan dan dampingan masyarakat, sehingga tercipta komunitas masyarakat yang sadar akan kewajiban dan hak sebagai bagian negara.</p>
+            <a href="profile.html" class="btn btn--secondary">
+              <span data-i18n="home.about.cta">Pelajari Lebih Lanjut</span>
+              <svg class="btn__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+          <div data-reveal="right" style="position:relative">
+            <div style="aspect-ratio:4/3;border-radius:var(--radius-xl);background:linear-gradient(135deg,var(--c-primary),var(--c-primary-dark));display:flex;align-items:center;justify-content:center;font-size:7rem;color:rgba(255,255,255,0.1)">🏛️</div>
+            <div style="position:absolute;bottom:-20px;right:-16px;padding:var(--space-5) var(--space-6);background:var(--c-white);border-radius:var(--radius-lg);box-shadow:var(--shadow-xl);text-align:center">
+              <div style="font-family:var(--font-display);font-size:var(--text-2xl);font-weight:700;color:var(--c-primary);line-height:1">AKSEN</div>
+              <div style="font-size:var(--text-xs);color:var(--c-text-muted);margin-top:4px">aksen.or.id</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ THREE PILLARS | wp:columns -->
+    <section class="section section--alt" id="pillars">
+      <div class="container">
+        <div class="text-center" data-reveal style="margin-bottom:var(--space-12)">
+          <span class="section-label" data-i18n="home.pillars.label">Program Utama</span>
+          <h2 class="section-title" data-i18n="home.pillars.title">Tiga Pilar Program</h2>
+          <p class="section-subtitle" data-i18n="home.pillars.sub">Diinisiasi oleh akademisi untuk kepentingan masyarakat luas, sebagai wujud tanggung jawab moral kaum intelektual.</p>
+          <div class="divider"></div>
+        </div>
+        <div class="focus-areas" data-reveal-stagger>
+          <div class="focus-card focus-card--research">
+            <div class="focus-card__pattern"></div>
+            <span class="focus-card__number">01</span>
+            <div class="focus-card__icon">🎓</div>
+            <h3 class="focus-card__title" data-i18n="home.pillar1.title">Pendidikan</h3>
+            <p class="focus-card__text" data-i18n="home.pillar1.text">Memberikan layanan pendidikan dan pelatihan pada masyarakat sebagai upaya transformasi pengetahuan yang berkelanjutan.</p>
+            <a href="program.html" class="focus-card__link">
+              <span data-i18n="home.pillar1.link">Lihat Program</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+          <div class="focus-card focus-card--advocacy">
+            <div class="focus-card__pattern"></div>
+            <span class="focus-card__number">02</span>
+            <div class="focus-card__icon">🤝</div>
+            <h3 class="focus-card__title" data-i18n="home.pillar2.title">Pemberdayaan</h3>
+            <p class="focus-card__text" data-i18n="home.pillar2.text">Melakukan pemberdayaan, pendampingan, dan pengembangan komunitas agar masyarakat mampu berkembang secara mandiri dan berdaya.</p>
+            <a href="program.html" class="focus-card__link">
+              <span data-i18n="home.pillar2.link">Lihat Program</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+          <div class="focus-card focus-card--research" style="--focus-bg:var(--c-info)">
+            <div class="focus-card__pattern"></div>
+            <span class="focus-card__number">03</span>
+            <div class="focus-card__icon">🔬</div>
+            <h3 class="focus-card__title" data-i18n="home.pillar3.title">Penelitian</h3>
+            <p class="focus-card__text" data-i18n="home.pillar3.text">Melakukan penelitian ilmiah, publikasi, dan pelatihan academic writing terkait pengembangan pengetahuan sosial kemasyarakatan.</p>
+            <a href="program.html" class="focus-card__link">
+              <span data-i18n="home.pillar3.link">Lihat Program</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ SECTORS | wp:group {"className":"section-sectors"} -->
+    <section class="section" id="sectors">
+      <div class="container">
+        <div class="text-center" data-reveal style="margin-bottom:0">
+          <span class="section-label" data-i18n="home.sectors.label">Sektor Program</span>
+          <h2 class="section-title" data-i18n="home.sectors.title">Bidang Kerja AKSEN</h2>
+          <p class="section-subtitle" data-i18n="home.sectors.sub">Tiga program utama diperluas ke dalam enam sektor yang relevan dengan kebutuhan nyata masyarakat.</p>
+        </div>
+        <div class="sectors-showcase" data-reveal-stagger>
+
+          <div class="sector-showcase-card" style="--sector-color:#1D4ED8;--sector-bg:#EFF6FF">
+            <div class="sector-showcase-card__top-bar"></div>
+            <span class="sector-showcase-card__num">01</span>
+            <div class="sector-showcase-card__icon">🕌</div>
+            <h3 class="sector-showcase-card__title" data-i18n="sector.keagamaan">Keagamaan</h3>
+            <p class="sector-showcase-card__text" data-i18n="sector.keagamaan.desc">Program berbasis nilai moderasi beragama dan pengembangan spiritualitas masyarakat.</p>
+            <span class="sector-showcase-card__badge">Pendidikan</span>
+          </div>
+
+          <div class="sector-showcase-card" style="--sector-color:#7C3AED;--sector-bg:#F5F3FF">
+            <div class="sector-showcase-card__top-bar"></div>
+            <span class="sector-showcase-card__num">02</span>
+            <div class="sector-showcase-card__icon">🎭</div>
+            <h3 class="sector-showcase-card__title" data-i18n="sector.sosial">Sosial &amp; Budaya</h3>
+            <p class="sector-showcase-card__text" data-i18n="sector.sosial.desc">Pelestarian kearifan lokal dan penguatan identitas budaya dalam arus modernisasi.</p>
+            <span class="sector-showcase-card__badge">Pemberdayaan</span>
+          </div>
+
+          <div class="sector-showcase-card" style="--sector-color:#059669;--sector-bg:#ECFDF5">
+            <div class="sector-showcase-card__top-bar"></div>
+            <span class="sector-showcase-card__num">03</span>
+            <div class="sector-showcase-card__icon">🌿</div>
+            <h3 class="sector-showcase-card__title" data-i18n="sector.lingkungan">Lingkungan</h3>
+            <p class="sector-showcase-card__text" data-i18n="sector.lingkungan.desc">Advokasi lingkungan hidup dan edukasi keberlanjutan untuk generasi mendatang.</p>
+            <span class="sector-showcase-card__badge">Penelitian</span>
+          </div>
+
+          <div class="sector-showcase-card" style="--sector-color:#D97706;--sector-bg:#FFFBEB">
+            <div class="sector-showcase-card__top-bar"></div>
+            <span class="sector-showcase-card__num">04</span>
+            <div class="sector-showcase-card__icon">🛒</div>
+            <h3 class="sector-showcase-card__title" data-i18n="sector.umkm">UMKM</h3>
+            <p class="sector-showcase-card__text" data-i18n="sector.umkm.desc">Pendampingan dan pengembangan usaha mikro, kecil, dan menengah berbasis komunitas.</p>
+            <span class="sector-showcase-card__badge">Pemberdayaan</span>
+          </div>
+
+          <div class="sector-showcase-card" style="--sector-color:#DC2626;--sector-bg:#FEF2F2">
+            <div class="sector-showcase-card__top-bar"></div>
+            <span class="sector-showcase-card__num">05</span>
+            <div class="sector-showcase-card__icon">⚖️</div>
+            <h3 class="sector-showcase-card__title" data-i18n="sector.hukum">Hukum &amp; Keluarga</h3>
+            <p class="sector-showcase-card__text" data-i18n="sector.hukum.desc">Bantuan hukum, mediasi keluarga, dan peningkatan literasi hukum masyarakat.</p>
+            <span class="sector-showcase-card__badge">Advokasi</span>
+          </div>
+
+          <div class="sector-showcase-card" style="--sector-color:#DB2777;--sector-bg:#FDF2F8">
+            <div class="sector-showcase-card__top-bar"></div>
+            <span class="sector-showcase-card__num">06</span>
+            <div class="sector-showcase-card__icon">🏳️</div>
+            <h3 class="sector-showcase-card__title" data-i18n="sector.gender">Gender &amp; HAM</h3>
+            <p class="sector-showcase-card__text" data-i18n="sector.gender.desc">Pemenuhan hak asasi manusia dan kesetaraan gender dalam kehidupan sosial.</p>
+            <span class="sector-showcase-card__badge">Advokasi</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ GENDER & ISLAM HIGHLIGHT | wp:group {"className":"section-focus"} -->
+    <section class="section" id="focus-areas">
+      <div class="container">
+        <div class="text-center" data-reveal style="margin-bottom:var(--space-12)">
+          <span class="section-label">Fokus Utama AKSEN</span>
+          <h2 class="section-title">Gender, Islam &amp; Transformasi Sosial</h2>
+          <p class="section-subtitle">Dua dimensi utama yang menjadi landasan penelitian, advokasi, dan program pemberdayaan AKSEN.</p>
+          <div class="divider"></div>
+        </div>
+        <div class="focus-highlight__grid" data-reveal-stagger>
+
+          <!-- Gender & HAM -->
+          <div class="focus-hl-card focus-hl-card--gender">
+            <div class="focus-hl-card__accent"></div>
+            <div class="focus-hl-card__top">
+              <div class="focus-hl-card__icon-wrap">♀</div>
+              <span class="focus-hl-card__tag">Advokasi &amp; Pemberdayaan</span>
+            </div>
+            <h3>Gender &amp; HAM</h3>
+            <p>AKSEN berkomitmen dalam advokasi kesetaraan gender dan perlindungan hak asasi manusia — terutama perempuan dan kelompok rentan — berbasis perspektif Islam moderat dan humanis.</p>
+            <ul class="focus-hl-card__list">
+              <li>Pendampingan hukum keluarga &amp; mediasi</li>
+              <li>Edukasi hak dan kesetaraan perempuan</li>
+              <li>Advokasi kebijakan responsif gender</li>
+              <li>Riset gender dalam konteks Islam Indonesia</li>
+            </ul>
+            <a href="program.html" class="focus-hl-card__link">
+              Lihat Program
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <!-- Islam & Kebangsaan -->
+          <div class="focus-hl-card focus-hl-card--islam">
+            <div class="focus-hl-card__accent"></div>
+            <div class="focus-hl-card__top">
+              <div class="focus-hl-card__icon-wrap">🕌</div>
+              <span class="focus-hl-card__tag">Pendidikan &amp; Moderasi</span>
+            </div>
+            <h3>Islam &amp; Kebangsaan</h3>
+            <p>Pengembangan moderasi beragama dan spiritualitas masyarakat berbasis nilai Islam rahmatan lil 'alamin — inklusif, kontekstual, dan membumi dalam kehidupan berbangsa.</p>
+            <ul class="focus-hl-card__list">
+              <li>Program moderasi beragama</li>
+              <li>Kajian fikih sosial &amp; hukum Islam</li>
+              <li>Literasi keagamaan berbasis komunitas</li>
+              <li>Riset Islam &amp; perubahan sosial</li>
+            </ul>
+            <a href="program.html" class="focus-hl-card__link">
+              Lihat Program
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ NILAI | wp:group {"className":"section-values","style":{"color":{"background":"#0F1A18"}}} -->
+    <section class="section section--dark" id="values">
+      <div class="container">
+        <div class="text-center" data-reveal style="margin-bottom:var(--space-12)">
+          <span class="section-label" data-i18n="home.values.label">Nilai Lembaga</span>
+          <h2 class="section-title" data-i18n="home.values.title">Nilai-Nilai yang Kami Pegang</h2>
+          <div class="divider" style="background:var(--c-accent);margin-inline:auto"></div>
+        </div>
+        <div class="values-showcase" data-reveal-stagger>
+          <div class="value-showcase-item">
+            <span class="value-showcase-item__ghost-num">1</span>
+            <span class="value-showcase-item__icon">💙</span>
+            <h3 class="value-showcase-item__name" data-i18n="value.1">Kemanusiaan</h3>
+            <div class="value-showcase-item__bar"></div>
+          </div>
+          <div class="value-showcase-item">
+            <span class="value-showcase-item__ghost-num">2</span>
+            <span class="value-showcase-item__icon">⚖️</span>
+            <h3 class="value-showcase-item__name" data-i18n="value.2">Kesamaan</h3>
+            <div class="value-showcase-item__bar"></div>
+          </div>
+          <div class="value-showcase-item">
+            <span class="value-showcase-item__ghost-num">3</span>
+            <span class="value-showcase-item__icon">🌐</span>
+            <h3 class="value-showcase-item__name" data-i18n="value.3">Kesemestaan</h3>
+            <div class="value-showcase-item__bar"></div>
+          </div>
+          <div class="value-showcase-item">
+            <span class="value-showcase-item__ghost-num">4</span>
+            <span class="value-showcase-item__icon">🧭</span>
+            <h3 class="value-showcase-item__name" data-i18n="value.4">Kenetralan</h3>
+            <div class="value-showcase-item__bar"></div>
+          </div>
+          <div class="value-showcase-item">
+            <span class="value-showcase-item__ghost-num">5</span>
+            <span class="value-showcase-item__icon">🦅</span>
+            <h3 class="value-showcase-item__name" data-i18n="value.5">Kemandirian</h3>
+            <div class="value-showcase-item__bar"></div>
+          </div>
+          <div class="value-showcase-item">
+            <span class="value-showcase-item__ghost-num">6</span>
+            <span class="value-showcase-item__icon">🤝</span>
+            <h3 class="value-showcase-item__name" data-i18n="value.6">Kesatuan</h3>
+            <div class="value-showcase-item__bar"></div>
+          </div>
+          <div class="value-showcase-item">
+            <span class="value-showcase-item__ghost-num">7</span>
+            <span class="value-showcase-item__icon">❤️</span>
+            <h3 class="value-showcase-item__name" data-i18n="value.7">Kesukarelaan</h3>
+            <div class="value-showcase-item__bar"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ QUOTE | wp:pullquote -->
+    <section class="section section--alt" id="quote">
+      <div class="container container--narrow">
+        <div class="quote-premium-wrap" data-reveal>
+          <div class="quote-premium">
+            <span class="quote-premium__ghost" aria-hidden="true">❝</span>
+            <div class="quote-premium__eyebrow" data-i18n="home.quote.eyebrow">Kata Direktur Eksekutif</div>
+            <span class="quote-premium__mark" aria-hidden="true">❝</span>
+            <blockquote class="quote-premium__text" data-i18n="home.quote.text">
+              AKSEN kita bangun bersama untuk menjadi wadah konstruktif dalam melakukan transformasi masyarakat sipil dalam aspek keagamaan, kebangsaan dan kemanusiaan.
+            </blockquote>
+            <div class="quote-premium__divider"></div>
+            <div class="quote-premium__author">
+              <div class="quote-premium__avatar">W</div>
+              <div>
+                <p class="quote-premium__name" data-i18n="home.quote.author">Dr. Wardah Nuroniyah, S.HI., M.SI.</p>
+                <p class="quote-premium__role" data-i18n="home.quote.role">Direktur Eksekutif, AKSEN</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ CTA | wp:group {"className":"section-cta"} -->
+    <section class="section section--lg cta" id="cta">
+      <div class="cta__bg"></div>
+      <div class="cta__grid"></div>
+      <div class="container">
+        <div class="cta__content" data-reveal>
+          <span class="section-label" style="color:var(--c-accent)" data-i18n="home.cta.label">Bergabung Bersama Kami</span>
+          <h2 data-i18n="home.cta.title">Bersama Kita Wujudkan Perubahan</h2>
+          <p data-i18n="home.cta.text">Terbuka untuk kolaborasi penelitian, kemitraan program, dan pendampingan masyarakat. Jadikan ilmu sebagai jalan perubahan.</p>
+          <div class="cta__actions">
+            <a href="contact.html" class="btn btn--accent btn--lg">
+              <span data-i18n="home.cta.btn1">Hubungi Kami</span>
+              <svg class="btn__arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="profile.html" class="btn btn--ghost btn--lg">
+              <span data-i18n="home.cta.btn2">Tentang AKSEN</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════ FOOTER | wp:group {"tagName":"footer"} -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="nav__logo" style="color:var(--c-white);margin-bottom:var(--space-3)">
+            <span class="nav__logo-icon">A</span><span>AKSEN</span>
+          </a>
+          <p data-i18n="footer.about.text">Akademika Semesta Nusantara (AKSEN) adalah lembaga yang mewadahi ilmuwan, praktisi, dan aktivis sosial dalam mencarikan solusi atas persoalan kemasyarakatan.</p>
+          <div class="footer__social">
+            <a href="https://www.instagram.com/akademikasemestanusantara" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__title" data-i18n="footer.nav.title">Navigasi</h4>
+          <div class="footer__links">
+            <a href="index.html"       data-i18n="nav.home">Beranda</a>
+            <a href="profile.html"     data-i18n="nav.profile">Profil</a>
+            <a href="program.html"     data-i18n="nav.programs">Program</a>
+            <a href="publication.html" data-i18n="nav.publications">Publikasi</a>
+            <a href="contact.html"     data-i18n="nav.contact">Kontak</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__title" data-i18n="footer.contact.title">Kontak</h4>
+          <div class="footer__links">
+            <a href="https://wa.me/6282130000023" target="_blank" rel="noopener">+62 821 3000 0023</a>
+            <a href="https://wa.me/6282315840110" target="_blank" rel="noopener">+62 823 1584 110</a>
+            <a href="mailto:akademikasemestanusantara@gmail.com">akademikasemestanusantara@gmail.com</a>
+            <a href="https://www.aksen.or.id" target="_blank" rel="noopener">www.aksen.or.id</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__title" data-i18n="footer.social.title">Media Sosial</h4>
+          <div class="footer__links">
+            <a href="https://www.instagram.com/akademikasemestanusantara" target="_blank" rel="noopener">@akademikasemestanusantara</a>
+            <a href="https://www.aksen.or.id" target="_blank" rel="noopener">www.aksen.or.id</a>
+          </div>
+          <div style="margin-top:var(--space-6);font-size:var(--text-xs);color:var(--c-gray-600);line-height:1.6">
+            Baileys City Apartemen,<br>Jl. Dewi Sartika No. 31 Ciputat,<br>Tangerang Selatan, Banten 15411
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span data-i18n="footer.copyright">© 2024 Akademika Semesta Nusantara. All rights reserved.</span>
+        <div class="footer__bottom-links">
+          <a href="wordpress-guide.html">WordPress Guide</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/home.js" defer></script>
+</body>
+</html>

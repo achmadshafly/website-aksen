@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Profil Akademika Semesta Nusantara (AKSEN) — visi, misi, struktur lembaga, dan dokumen legal organisasi sosial kemasyarakatan.">
+  <meta name="theme-color" content="#1D4ED8">
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="Profil | AKSEN — Akademika Semesta Nusantara">
+  <meta property="og:description" content="Lembaga yang menggerakkan kolaborasi akademisi, ilmuwan, praktisi, dan aktivis sosial.">
+  <meta property="og:url"         content="https://aksen.or.id/profile.html">
+  <meta property="og:image"       content="https://aksen.or.id/assets/images/og-image.jpg">
+  <meta name="twitter:card"  content="summary_large_image">
+  <meta name="twitter:title" content="Profil | AKSEN — Akademika Semesta Nusantara">
+  <link rel="canonical" href="https://aksen.or.id/profile.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/i18n.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <title>Profil | AKSEN — Akademika Semesta Nusantara</title>
+</head>
+<body>
+
+  <div class="loader" id="loader"><div class="loader__spinner"></div></div>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ═══════════════ NAVIGATION -->
+  <header>
+    <nav class="nav" data-nav role="navigation" aria-label="Navigasi utama" data-i18n-aria="nav.aria">
+      <div class="container nav__inner">
+        <a href="index.html" class="nav__logo">
+          <span class="nav__logo-icon">A</span><span>AKSEN</span>
+        </a>
+        <div class="nav__links">
+          <a href="index.html"       class="nav__link"        data-i18n="nav.home">Beranda</a>
+          <a href="profile.html"     class="nav__link active" data-i18n="nav.profile">Profil</a>
+          <a href="program.html"     class="nav__link"        data-i18n="nav.programs">Program</a>
+          <a href="publication.html" class="nav__link"        data-i18n="nav.publications">Publikasi</a>
+          <a href="contact.html"     class="nav__link"        data-i18n="nav.contact">Kontak</a>
+        </div>
+        <button class="lang-toggle" data-lang-toggle data-active-lang="id" aria-label="Beralih ke Bahasa Inggris">
+          <span class="lang-toggle__pill"></span>
+          <span class="lang-toggle__label">ID</span>
+          <span class="lang-toggle__label">EN</span>
+        </button>
+        <a href="contact.html" class="nav__cta" data-i18n="nav.cta">Hubungi Kami</a>
+        <button class="nav__toggle" data-menu-toggle aria-label="Buka menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="nav__mobile" data-mobile-menu>
+    <a href="index.html"       data-i18n="nav.home">Beranda</a>
+    <a href="profile.html"     data-i18n="nav.profile">Profil</a>
+    <a href="program.html"     data-i18n="nav.programs">Program</a>
+    <a href="publication.html" data-i18n="nav.publications">Publikasi</a>
+    <a href="contact.html"     data-i18n="nav.contact">Kontak</a>
+    <button class="lang-toggle" data-lang-toggle data-active-lang="id" aria-label="Ganti bahasa">
+      <span class="lang-toggle__pill"></span>
+      <span class="lang-toggle__label">ID</span>
+      <span class="lang-toggle__label">EN</span>
+    </button>
+  </div>
+
+  <main id="main" role="main">
+
+    <!-- ═══════════════ PAGE HERO | wp:cover -->
+    <section class="page-hero">
+      <div class="page-hero__pattern"></div>
+      <div class="geo-shape geo-shape--1"></div>
+      <div class="geo-shape geo-shape--2"></div>
+      <div class="container page-hero__content">
+        <div class="page-hero__breadcrumb">
+          <a href="index.html" data-i18n="common.home">Beranda</a>
+          <span>›</span>
+          <span data-i18n="nav.profile">Profil</span>
+        </div>
+        <h1 class="page-hero__title">
+          <span data-i18n-html="profile.hero.title">Tentang Akademika<br>Semesta Nusantara</span>
+        </h1>
+        <p class="page-hero__text" data-i18n="profile.hero.text">
+          Lembaga yang menggerakkan kolaborasi akademisi, ilmuwan, praktisi, dan aktivis sosial.
+        </p>
+      </div>
+    </section>
+
+    <!-- ═══════════════ DESKRIPSI LEMBAGA | wp:group -->
+    <section class="section" id="about">
+      <div class="container">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-16);align-items:center">
+          <div data-reveal="left">
+            <span class="section-label" data-i18n="profile.about.label">Deskripsi Lembaga</span>
+            <h2 class="section-title" data-i18n="profile.about.title">Akademika Semesta Nusantara</h2>
+            <div class="divider"></div>
+            <p style="margin-bottom:var(--space-4)" data-i18n="profile.about.text1">
+              Akademika Semesta Nusantara (AKSEN) hadir memberikan layanan pendidikan, pengembangan komunitas sosial, dan penelitian. Lembaga ini hadir sebagai respon perubahan sosial, sembari memberikan antisipasi dampak perubahan yang akan dialami masyarakat.
+            </p>
+            <p data-i18n-html="profile.about.text2">
+              AKSEN berkomitmen mewujudkan <em>good governance</em> dengan memberikan pendidikan dan dampingan masyarakat, sehingga tercipta komunitas yang sadar kewajiban dan haknya sebagai bagian negara — <em>"empowering the community, enlightening the future"</em>.
+            </p>
+          </div>
+          <div data-reveal="right" style="position:relative">
+            <div style="aspect-ratio:4/3;border-radius:var(--radius-xl);background:linear-gradient(135deg,var(--c-primary),var(--c-primary-dark));display:flex;align-items:center;justify-content:center;font-size:7rem;color:rgba(255,255,255,0.08)">🏛️</div>
+            <div style="position:absolute;bottom:-20px;right:-16px;padding:var(--space-5) var(--space-6);background:var(--c-white);border-radius:var(--radius-lg);box-shadow:var(--shadow-xl);text-align:center">
+              <div style="font-family:var(--font-display);font-size:var(--text-2xl);font-weight:700;color:var(--c-primary);line-height:1">AKSEN</div>
+              <div style="font-size:var(--text-xs);color:var(--c-text-muted);margin-top:4px">Ciputat, Tangerang Selatan</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ VISI & MISI | wp:group -->
+    <section class="section section--alt" id="visi-misi">
+      <div class="container">
+        <div class="text-center" data-reveal style="margin-bottom:var(--space-12)">
+          <span class="section-label" data-i18n="profile.vm.label">Prinsip Dasar</span>
+          <h2 class="section-title" data-i18n="profile.vm.title">Visi &amp; Misi</h2>
+        </div>
+        <div class="vm-grid" data-reveal-stagger>
+          <!-- Visi -->
+          <div class="vm-card vm-card--vision">
+            <div class="vm-card__icon">🔭</div>
+            <h3 class="vm-card__title" data-i18n="profile.vision.label">Visi</h3>
+            <p class="vm-card__text" data-i18n="profile.vision.text">
+              Empowering the community, enlightening the future
+            </p>
+          </div>
+          <!-- Misi -->
+          <div class="vm-card vm-card--mission">
+            <div class="vm-card__icon">🎯</div>
+            <h3 class="vm-card__title" data-i18n="profile.mission.label">Misi</h3>
+            <ul class="vm-card__list">
+              <li data-i18n="profile.mission.item1">Melakukan transformasi pengetahuan untuk membangun kesadaran masyarakat</li>
+              <li data-i18n="profile.mission.item2">Memberikan dampingan untuk pengembangan masyarakat</li>
+              <li data-i18n="profile.mission.item3">Melakukan penelitian untuk pengembangan dan transformasi pengetahuan</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ STRUKTUR LEMBAGA | wp:group -->
+    <section class="section" id="struktur">
+      <div class="container">
+        <div class="text-center" data-reveal style="margin-bottom:var(--space-12)">
+          <span class="section-label" data-i18n="profile.structure.label">Kepengurusan</span>
+          <h2 class="section-title" data-i18n="profile.structure.title">Struktur Lembaga</h2>
+          <p class="section-subtitle">Tim akademisi, ilmuwan, dan praktisi yang berkomitmen untuk perubahan sosial yang bermakna.</p>
+        </div>
+
+        <!-- Dewan Pakar -->
+        <div class="org-tier" data-reveal>
+          <div class="org-tier__label">
+            <span class="org-tier__badge">Dewan Pakar</span>
+          </div>
+          <div class="org-tier__members org-tier__members--4">
+            <div class="member-card">
+              <div class="member-card__photo">
+                <img src="assets/team/nasaruddin-umar.jpg" alt="Prof. Dr. KH. Nasaruddin Umar" loading="lazy" onerror="this.style.display='none'">
+                <span class="member-card__initial">N</span>
+              </div>
+              <div class="member-card__info">
+                <p class="member-card__name">Prof. Dr. KH. Nasaruddin Umar, M.A</p>
+                <p class="member-card__role">Dewan Pakar</p>
+              </div>
+            </div>
+            <div class="member-card">
+              <div class="member-card__photo">
+                <img src="assets/team/ghani-abdullah.jpg" alt="Prof. Dr. H. A. Ghani Abdullah" loading="lazy" onerror="this.style.display='none'">
+                <span class="member-card__initial">G</span>
+              </div>
+              <div class="member-card__info">
+                <p class="member-card__name">Prof. Dr. H. A. Ghani Abdullah, MA</p>
+                <p class="member-card__role">Dewan Pakar</p>
+              </div>
+            </div>
+            <div class="member-card">
+              <div class="member-card__photo">
+                <img src="assets/team/agus-najib.jpg" alt="Prof. Dr. H. Agus Moh Najib" loading="lazy" onerror="this.style.display='none'">
+                <span class="member-card__initial">A</span>
+              </div>
+              <div class="member-card__info">
+                <p class="member-card__name">Prof. Dr. H. Agus Moh Najib, M.Ag</p>
+                <p class="member-card__role">Dewan Pakar</p>
+              </div>
+            </div>
+            <div class="member-card">
+              <div class="member-card__photo">
+                <img src="assets/team/illya-muhsin.jpg" alt="Prof. Dr. Illya Muhsin" loading="lazy" onerror="this.style.display='none'">
+                <span class="member-card__initial">I</span>
+              </div>
+              <div class="member-card__info">
+                <p class="member-card__name">Prof. Dr. Illya Muhsin, MSi</p>
+                <p class="member-card__role">Dewan Pakar</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pembina & Penasehat -->
+        <div class="org-tier" data-reveal>
+          <div class="org-dual">
+            <div class="org-dual__group">
+              <div class="org-tier__label"><span class="org-tier__badge">Pembina</span></div>
+              <div class="org-tier__members org-tier__members--1">
+                <div class="member-card">
+                  <div class="member-card__photo">
+                    <img src="assets/team/naila-farah.jpg" alt="Dr. Naila Farah" loading="lazy" onerror="this.style.display='none'">
+                    <span class="member-card__initial">N</span>
+                  </div>
+                  <div class="member-card__info">
+                    <p class="member-card__name">Dr. Naila Farah, M.Ag</p>
+                    <p class="member-card__role">Pembina</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="org-dual__group">
+              <div class="org-tier__label"><span class="org-tier__badge">Penasehat</span></div>
+              <div class="org-tier__members org-tier__members--2">
+                <div class="member-card">
+                  <div class="member-card__photo">
+                    <img src="assets/team/bani-syarif.jpg" alt="Dr. Bani Syarif Maula" loading="lazy" onerror="this.style.display='none'">
+                    <span class="member-card__initial">B</span>
+                  </div>
+                  <div class="member-card__info">
+                    <p class="member-card__name">Dr. Bani Syarif Maula, M Ag, L.LM</p>
+                    <p class="member-card__role">Penasehat</p>
+                  </div>
+                </div>
+                <div class="member-card">
+                  <div class="member-card__photo">
+                    <img src="assets/team/ilham-bustomi.jpg" alt="H. Ilham Bustomi" loading="lazy" onerror="this.style.display='none'">
+                    <span class="member-card__initial">I</span>
+                  </div>
+                  <div class="member-card__info">
+                    <p class="member-card__name">H. Ilham Bustomi, M.Ag</p>
+                    <p class="member-card__role">Penasehat</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Direktur Eksekutif (Featured) -->
+        <div class="org-tier" data-reveal>
+          <div class="org-tier__label"><span class="org-tier__badge org-tier__badge--primary">Direktur Eksekutif</span></div>
+          <div class="org-tier__members org-tier__members--1 org-tier__members--center">
+            <div class="member-card member-card--featured">
+              <div class="member-card__photo">
+                <img src="assets/team/wardah-nuroniyah.jpg" alt="Dr. Wardah Nuroniyah" loading="lazy" onerror="this.style.display='none'">
+                <span class="member-card__initial">W</span>
+              </div>
+              <div class="member-card__info">
+                <p class="member-card__name">Dr. Wardah Nuroniyah, S.HI., MSI.</p>
+                <p class="member-card__role">Direktur Eksekutif</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Direktur Kelembagaan & Manajer -->
+        <div class="org-tier" data-reveal>
+          <div class="org-tier__label"><span class="org-tier__badge">Direktur &amp; Manajer</span></div>
+          <div class="org-tier__members org-tier__members--3">
+            <div class="member-card">
+              <div class="member-card__photo">
+                <img src="assets/team/mulyono-lodji.jpg" alt="Mulyono Lodji" loading="lazy" onerror="this.style.display='none'">
+                <span class="member-card__initial">M</span>
+              </div>
+              <div class="member-card__info">
+                <p class="member-card__name">Mulyono Lodji, MSI.</p>
+                <p class="member-card__role">Direktur Kelembagaan &amp; Keuangan</p>
+              </div>
+            </div>
+            <div class="member-card">
+              <div class="member-card__photo">
+                <img src="assets/team/dimar-triwidjayandaru.jpg" alt="Dimar Triwidjayandaru" loading="lazy" onerror="this.style.display='none'">
+                <span class="member-card__initial">D</span>
+              </div>
+              <div class="member-card__info">
+                <p class="member-card__name">Dimar Triwidjayandaru</p>
+                <p class="member-card__role">Manajer Program</p>
+              </div>
+            </div>
+            <div class="member-card">
+              <div class="member-card__photo">
+                <img src="assets/team/nisrina-mulkah.jpg" alt="Nisrina Mulkah" loading="lazy" onerror="this.style.display='none'">
+                <span class="member-card__initial">N</span>
+              </div>
+              <div class="member-card__info">
+                <p class="member-card__name">Nisrina Mulkah, SE</p>
+                <p class="member-card__role">Manajer Kerjasama</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Program Officer -->
+        <div class="org-tier" data-reveal>
+          <div class="org-tier__label"><span class="org-tier__badge">Program Officer</span></div>
+          <div class="org-tier__members org-tier__members--3">
+            <div class="member-card">
+              <div class="member-card__photo">
+                <img src="assets/team/ady-pranata.jpg" alt="Ady Pranata" loading="lazy" onerror="this.style.display='none'">
+                <span class="member-card__initial">A</span>
+              </div>
+              <div class="member-card__info">
+                <p class="member-card__name">Ady Pranata, S.Kom</p>
+                <p class="member-card__role">Program Officer</p>
+              </div>
+            </div>
+            <div class="member-card">
+              <div class="member-card__photo">
+                <img src="assets/team/fitriyani.jpg" alt="Fitriyani" loading="lazy" onerror="this.style.display='none'">
+                <span class="member-card__initial">F</span>
+              </div>
+              <div class="member-card__info">
+                <p class="member-card__name">Fitriyani, MHI</p>
+                <p class="member-card__role">Program Officer</p>
+              </div>
+            </div>
+            <div class="member-card">
+              <div class="member-card__photo">
+                <img src="assets/team/aaz-jidatul.jpg" alt="Aaz Jidatul Haz" loading="lazy" onerror="this.style.display='none'">
+                <span class="member-card__initial">A</span>
+              </div>
+              <div class="member-card__info">
+                <p class="member-card__name">Aaz Jidatul Haz, SHI</p>
+                <p class="member-card__role">Program Officer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kepala Divisi -->
+        <div class="org-tier" data-reveal>
+          <div class="org-tier__label"><span class="org-tier__badge">Kepala Divisi</span></div>
+          <div class="org-tier__members org-tier__members--3">
+            <div class="member-card">
+              <div class="member-card__photo">
+                <img src="assets/team/sukron-maamun.jpg" alt="Sukron Ma'mun" loading="lazy" onerror="this.style.display='none'">
+                <span class="member-card__initial">S</span>
+              </div>
+              <div class="member-card__info">
+                <p class="member-card__name">Sukron Ma'mun, M.Si, Ph.D</p>
+                <p class="member-card__role">Divisi Penelitian &amp; Pengembangan</p>
+              </div>
+            </div>
+            <div class="member-card">
+              <div class="member-card__photo">
+                <img src="assets/team/ahmad-anfasul.jpg" alt="Ahmad Anfasul Marom" loading="lazy" onerror="this.style.display='none'">
+                <span class="member-card__initial">A</span>
+              </div>
+              <div class="member-card__info">
+                <p class="member-card__name">Ahmad Anfasul Marom, MA.</p>
+                <p class="member-card__role">Divisi Pelatihan &amp; Literasi</p>
+              </div>
+            </div>
+            <div class="member-card">
+              <div class="member-card__photo">
+                <img src="assets/team/nurul-marifah.jpg" alt="Dr. Nurul Ma'rifah" loading="lazy" onerror="this.style.display='none'">
+                <span class="member-card__initial">N</span>
+              </div>
+              <div class="member-card__info">
+                <p class="member-card__name">Dr. Nurul Ma'rifah, MSI</p>
+                <p class="member-card__role">Divisi Pemberdayaan Masyarakat</p>
+              </div>
+            </div>
+            <div class="member-card">
+              <div class="member-card__photo">
+                <img src="assets/team/muflihah-wijayati.jpg" alt="Dr. Muflihah Wijayati" loading="lazy" onerror="this.style.display='none'">
+                <span class="member-card__initial">M</span>
+              </div>
+              <div class="member-card__info">
+                <p class="member-card__name">Dr. Muflihah Wijayati, MA</p>
+                <p class="member-card__role">Divisi Advokasi &amp; Mediasi</p>
+              </div>
+            </div>
+            <div class="member-card">
+              <div class="member-card__photo">
+                <img src="assets/team/lilik-andaryuni.jpg" alt="Dr. Lilik Andaryuni" loading="lazy" onerror="this.style.display='none'">
+                <span class="member-card__initial">L</span>
+              </div>
+              <div class="member-card__info">
+                <p class="member-card__name">Dr. Lilik Andaryuni, MSI</p>
+                <p class="member-card__role">Divisi Kerjasama</p>
+              </div>
+            </div>
+            <div class="member-card">
+              <div class="member-card__photo">
+                <img src="assets/team/latif-fauzi.jpg" alt="Latif Fauzi" loading="lazy" onerror="this.style.display='none'">
+                <span class="member-card__initial">L</span>
+              </div>
+              <div class="member-card__info">
+                <p class="member-card__name">Latif Fauzi, MSI, MA, Ph.D</p>
+                <p class="member-card__role">Divisi Publikasi &amp; Digitalisasi</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ═══════════════ CTA MODERN -->
+    <section class="cta-modern" id="cta">
+      <div class="cta-modern__grid"></div>
+      <div class="container cta-modern__inner">
+
+        <div class="cta-modern__content" data-reveal>
+          <div class="cta-modern__badge">
+            <span class="pulse"></span>
+            Bergabung Bersama Kami
+          </div>
+          <h2 class="cta-modern__title">Bersama Kita<br><em>Wujudkan Perubahan</em></h2>
+          <p class="cta-modern__text">Terbuka untuk kolaborasi penelitian, kemitraan program, dan pendampingan masyarakat. Jadikan ilmu sebagai jalan perubahan sosial yang bermakna.</p>
+          <div class="cta-modern__btns">
+            <a href="contact.html" class="btn btn--accent btn--lg">
+              Hubungi Kami
+              <svg class="btn__arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="program.html" class="btn btn--ghost btn--lg">Lihat Program</a>
+          </div>
+        </div>
+
+        <div class="cta-modern__wa-panel" data-reveal>
+          <p class="cta-modern__wa-label">Hubungi via WhatsApp</p>
+          <a href="https://wa.me/6282130000023" target="_blank" rel="noopener" class="wa-card">
+            <div class="wa-card__icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </div>
+            <div class="wa-card__info">
+              <span class="wa-card__sublabel">WhatsApp</span>
+              <span class="wa-card__num">+62 821 3000 0023</span>
+            </div>
+            <svg class="wa-card__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="https://wa.me/6282315840110" target="_blank" rel="noopener" class="wa-card">
+            <div class="wa-card__icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </div>
+            <div class="wa-card__info">
+              <span class="wa-card__sublabel">WhatsApp</span>
+              <span class="wa-card__num">+62 823 1584 110</span>
+            </div>
+            <svg class="wa-card__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════ FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="nav__logo" style="color:var(--c-white);margin-bottom:var(--space-3)">
+            <span class="nav__logo-icon">A</span><span>AKSEN</span>
+          </a>
+          <p data-i18n="footer.about.text">Akademika Semesta Nusantara (AKSEN) adalah lembaga yang mewadahi ilmuwan, praktisi, dan aktivis sosial dalam mencarikan solusi atas persoalan kemasyarakatan.</p>
+          <div class="footer__social">
+            <a href="https://www.instagram.com/akademikasemestanusantara" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__title" data-i18n="footer.nav.title">Navigasi</h4>
+          <div class="footer__links">
+            <a href="index.html"       data-i18n="nav.home">Beranda</a>
+            <a href="profile.html"     data-i18n="nav.profile">Profil</a>
+            <a href="program.html"     data-i18n="nav.programs">Program</a>
+            <a href="publication.html" data-i18n="nav.publications">Publikasi</a>
+            <a href="contact.html"     data-i18n="nav.contact">Kontak</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__title" data-i18n="footer.contact.title">Kontak</h4>
+          <div class="footer__links">
+            <a href="https://wa.me/6282130000023" target="_blank" rel="noopener">+62 821 3000 0023</a>
+            <a href="https://wa.me/6282315840110" target="_blank" rel="noopener">+62 823 1584 110</a>
+            <a href="mailto:akademikasemestanusantara@gmail.com">akademikasemestanusantara@gmail.com</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__title" data-i18n="footer.social.title">Media Sosial</h4>
+          <div class="footer__links">
+            <a href="https://www.instagram.com/akademikasemestanusantara" target="_blank" rel="noopener">@akademikasemestanusantara</a>
+            <a href="https://www.aksen.or.id" target="_blank" rel="noopener">www.aksen.or.id</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span data-i18n="footer.copyright">© 2024 Akademika Semesta Nusantara. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

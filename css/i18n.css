@@ -1,0 +1,221 @@
+/* ============================================================
+   AKSEN — i18n.css
+   Language switcher UI + animated text-swap transitions
+   ============================================================ */
+
+/* ── Language Toggle Button ── */
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: var(--radius-full);
+  padding: 3px;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  flex-shrink: 0;
+  transition: background var(--t), border-color var(--t), box-shadow var(--t);
+}
+
+.lang-toggle:focus-visible {
+  outline: 2px solid var(--c-accent);
+  outline-offset: 3px;
+}
+
+.lang-toggle:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* ── Sliding pill indicator ── */
+.lang-toggle__pill {
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  bottom: 3px;
+  width: calc(50% - 3px);
+  background: var(--c-white);
+  border-radius: var(--radius-full);
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  pointer-events: none;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.18);
+  will-change: transform;
+}
+
+.lang-toggle[data-active-lang="en"] .lang-toggle__pill {
+  transform: translateX(100%);
+}
+
+/* ── Labels ── */
+.lang-toggle__label {
+  position: relative;
+  z-index: 1;
+  padding: 5px 13px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 0.3s ease;
+  user-select: none;
+  min-width: 32px;
+  text-align: center;
+  font-family: var(--font-body);
+}
+
+/* Active label — text over white pill → dark color */
+.lang-toggle[data-active-lang="id"] .lang-toggle__label:nth-of-type(1),
+.lang-toggle[data-active-lang="en"] .lang-toggle__label:nth-of-type(2) {
+  color: var(--c-primary-dark);
+}
+
+/* ── Scrolled nav variant ── */
+.nav.scrolled .lang-toggle {
+  background: var(--c-gray-100);
+  border-color: var(--c-border);
+}
+
+.nav.scrolled .lang-toggle:hover {
+  background: var(--c-gray-200);
+}
+
+.nav.scrolled .lang-toggle__pill {
+  background: var(--c-primary);
+  box-shadow: 0 1px 6px rgba(13, 107, 75, 0.3);
+}
+
+.nav.scrolled .lang-toggle__label {
+  color: var(--c-gray-500);
+}
+
+.nav.scrolled .lang-toggle[data-active-lang="id"] .lang-toggle__label:nth-of-type(1),
+.nav.scrolled .lang-toggle[data-active-lang="en"] .lang-toggle__label:nth-of-type(2) {
+  color: var(--c-white);
+}
+
+/* ── Mobile menu variant ── */
+.nav__mobile .lang-toggle {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.15);
+  transform: scale(1.25);
+  margin-top: var(--space-6);
+}
+
+.nav__mobile .lang-toggle__pill {
+  background: var(--c-accent);
+  box-shadow: 0 1px 6px rgba(200, 169, 81, 0.35);
+}
+
+.nav__mobile .lang-toggle__label {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.nav__mobile .lang-toggle[data-active-lang="id"] .lang-toggle__label:nth-of-type(1),
+.nav__mobile .lang-toggle[data-active-lang="en"] .lang-toggle__label:nth-of-type(2) {
+  color: var(--c-gray-900);
+}
+
+/* ────────────────────────────────────────────────────────────
+   LANGUAGE SWITCH ANIMATIONS
+   ────────────────────────────────────────────────────────────
+
+   Phase 1 (lang-out)  → text fades + blurs + moves up
+   Phase 2             → content swaps
+   Phase 3 (lang-in)   → text fades in from below
+*/
+
+/* Base transition for all translatable elements */
+[data-i18n],
+[data-i18n-html] {
+  transition:
+    opacity   0.25s ease,
+    transform 0.25s ease,
+    filter    0.25s ease;
+}
+
+/* ── Phase 1: FADE OUT ── */
+body.lang-out [data-i18n],
+body.lang-out [data-i18n-html] {
+  opacity:   0 !important;
+  transform: translateY(-8px) scale(0.98) !important;
+  filter:    blur(4px) !important;
+}
+
+/* ── Phase 3: FADE IN ── */
+body.lang-in [data-i18n],
+body.lang-in [data-i18n-html] {
+  animation: aksen-lang-in 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* Stagger for heading vs paragraph */
+body.lang-in h1[data-i18n],  body.lang-in h1[data-i18n-html]  { animation-delay: 0ms;   }
+body.lang-in h2[data-i18n],  body.lang-in h2[data-i18n-html]  { animation-delay: 20ms;  }
+body.lang-in h3[data-i18n],  body.lang-in h3[data-i18n-html]  { animation-delay: 30ms;  }
+body.lang-in p[data-i18n],   body.lang-in p[data-i18n-html]   { animation-delay: 40ms;  }
+body.lang-in span[data-i18n]                                   { animation-delay: 10ms;  }
+body.lang-in a[data-i18n]                                      { animation-delay: 50ms;  }
+
+@keyframes aksen-lang-in {
+  from {
+    opacity:   0;
+    transform: translateY(12px) scale(0.98);
+    filter:    blur(5px);
+  }
+  to {
+    opacity:   1;
+    transform: translateY(0) scale(1);
+    filter:    blur(0);
+  }
+}
+
+/* ── Ripple Effect ── */
+.lang-ripple {
+  position: absolute;
+  width:  0;
+  height: 0;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(13, 107, 75, 0.10) 0%,
+    rgba(200, 169, 81, 0.05) 40%,
+    transparent 70%
+  );
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9998;
+  animation: aksen-ripple 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes aksen-ripple {
+  0%   { width: 0;       height: 0;       opacity: 1; }
+  100% { width: 250vmax; height: 250vmax; opacity: 0; }
+}
+
+/* ── Reduced Motion ── */
+@media (prefers-reduced-motion: reduce) {
+  [data-i18n],
+  [data-i18n-html] {
+    transition: none;
+  }
+
+  body.lang-out [data-i18n],
+  body.lang-out [data-i18n-html] {
+    opacity:   1 !important;
+    transform: none !important;
+    filter:    none !important;
+  }
+
+  body.lang-in [data-i18n],
+  body.lang-in [data-i18n-html] {
+    animation: none;
+  }
+
+  .lang-ripple {
+    display: none;
+  }
+
+  .lang-toggle__pill {
+    transition: transform 0.15s ease;
+  }
+}
