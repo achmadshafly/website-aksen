@@ -1,0 +1,123 @@
+/* ============================================================
+   Akademika Semesta Nusantara — Design Tokens
+   ============================================================ */
+
+:root {
+  /* ── Brand Colors ── */
+  --c-primary:       #1D4ED8;
+  --c-primary-dark:  #1E3A8A;
+  --c-primary-light: #EFF6FF;
+  --c-primary-100:   #BFDBFE;
+  --c-primary-200:   #93C5FD;
+  --c-primary-600:   #2563EB;
+  --c-primary-900:   #172554;
+
+  --c-accent:        #F59E0B;
+  --c-accent-dark:   #B45309;
+  --c-accent-light:  #FEF3C7;
+
+  --c-red:           #DC2626;
+  --c-red-dark:      #991B1B;
+  --c-red-light:     #FEE2E2;
+
+  --c-blue:          #1D4ED8;
+  --c-blue-dark:     #1E3A8A;
+  --c-blue-light:    #EFF6FF;
+
+  /* ── Semantic Colors ── */
+  --c-success:       #10B981;
+  --c-warning:       #F59E0B;
+  --c-error:         #EF4444;
+  --c-info:          #3B82F6;
+
+  /* ── Neutral Scale ── */
+  --c-white:         #FFFFFF;
+  --c-gray-50:       #F8FAFC;
+  --c-gray-100:      #F1F5F9;
+  --c-gray-200:      #E2E8F0;
+  --c-gray-300:      #CBD5E1;
+  --c-gray-400:      #94A3B8;
+  --c-gray-500:      #64748B;
+  --c-gray-600:      #475569;
+  --c-gray-700:      #334155;
+  --c-gray-800:      #1E293B;
+  --c-gray-900:      #0F172A;
+
+  /* ── Semantic Mappings ── */
+  --c-bg:            var(--c-white);
+  --c-bg-alt:        var(--c-gray-50);
+  --c-bg-dark:       #0F172A;
+  --c-text:          var(--c-gray-900);
+  --c-text-muted:    var(--c-gray-600);
+  --c-text-light:    var(--c-gray-400);
+  --c-text-on-dark:  var(--c-white);
+  --c-border:        var(--c-gray-200);
+
+  /* ── Typography ── */
+  --font-display:    'Playfair Display', Georgia, serif;
+  --font-body:       'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono:       'JetBrains Mono', 'Fira Code', monospace;
+
+  /* ── Type Scale (fluid) ── */
+  --text-xs:    clamp(0.7rem, 0.65rem + 0.25vw, 0.75rem);
+  --text-sm:    clamp(0.8rem, 0.75rem + 0.25vw, 0.875rem);
+  --text-base:  clamp(0.938rem, 0.875rem + 0.3vw, 1rem);
+  --text-lg:    clamp(1.063rem, 1rem + 0.3vw, 1.125rem);
+  --text-xl:    clamp(1.15rem, 1rem + 0.5vw, 1.25rem);
+  --text-2xl:   clamp(1.35rem, 1.1rem + 0.8vw, 1.5rem);
+  --text-3xl:   clamp(1.6rem, 1.2rem + 1.2vw, 1.875rem);
+  --text-4xl:   clamp(1.8rem, 1.3rem + 1.6vw, 2.25rem);
+  --text-5xl:   clamp(2.2rem, 1.5rem + 2.2vw, 3rem);
+  --text-6xl:   clamp(2.8rem, 1.8rem + 3vw, 3.75rem);
+  --text-7xl:   clamp(3.2rem, 2rem + 3.5vw, 4.5rem);
+
+  /* ── Spacing ── */
+  --space-1:   0.25rem;
+  --space-2:   0.5rem;
+  --space-3:   0.75rem;
+  --space-4:   1rem;
+  --space-5:   1.25rem;
+  --space-6:   1.5rem;
+  --space-8:   2rem;
+  --space-10:  2.5rem;
+  --space-12:  3rem;
+  --space-16:  4rem;
+  --space-20:  5rem;
+  --space-24:  6rem;
+  --space-32:  8rem;
+
+  /* ── Layout ── */
+  --container:          1280px;
+  --container-narrow:   800px;
+  --container-wide:     1440px;
+  --container-padding:  clamp(1rem, 5vw, 2rem);
+
+  /* ── Shape ── */
+  --radius-sm:   4px;
+  --radius:      8px;
+  --radius-md:   12px;
+  --radius-lg:   16px;
+  --radius-xl:   24px;
+  --radius-full: 9999px;
+
+  /* ── Shadow ── */
+  --shadow-sm:   0 1px 2px rgba(29,78,216,0.05);
+  --shadow:      0 1px 3px rgba(29,78,216,0.08), 0 1px 2px rgba(29,78,216,0.04);
+  --shadow-md:   0 4px 6px -1px rgba(29,78,216,0.08), 0 2px 4px -2px rgba(29,78,216,0.04);
+  --shadow-lg:   0 10px 15px -3px rgba(29,78,216,0.10), 0 4px 6px -4px rgba(29,78,216,0.04);
+  --shadow-xl:   0 20px 25px -5px rgba(29,78,216,0.12), 0 8px 10px -6px rgba(29,78,216,0.04);
+  --shadow-glow: 0 0 30px rgba(29,78,216,0.25);
+
+  /* ── Transitions ── */
+  --t-fast:    150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --t:         250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --t-slow:    400ms cubic-bezier(0.4, 0, 0.2, 1);
+  --t-spring:  500ms cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* ── Z-Index ── */
+  --z-dropdown: 100;
+  --z-sticky:   200;
+  --z-overlay:  300;
+  --z-modal:    400;
+  --z-toast:    500;
+}

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Publikasi dan Riset AKSEN — karya ilmiah, artikel, dan laporan penelitian dari tim akademisi Akademika Semesta Nusantara.">
+  <meta name="theme-color" content="#1D4ED8">
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="Publikasi & Riset | AKSEN — Akademika Semesta Nusantara">
+  <meta property="og:description" content="Karya ilmiah, artikel, dan laporan penelitian dari tim akademisi AKSEN untuk masyarakat luas.">
+  <meta property="og:url"         content="https://aksen.or.id/publication.html">
+  <meta property="og:image"       content="https://aksen.or.id/assets/images/og-image.jpg">
+  <meta name="twitter:card"  content="summary_large_image">
+  <meta name="twitter:title" content="Publikasi & Riset | AKSEN">
+  <link rel="canonical" href="https://aksen.or.id/publication.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/i18n.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <title>Publikasi & Riset | AKSEN — Akademika Semesta Nusantara</title>
+</head>
+<body>
+
+  <div class="loader" id="loader"><div class="loader__spinner"></div></div>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ═══════════════ NAVIGATION -->
+  <header>
+    <nav class="nav" data-nav role="navigation" aria-label="Navigasi utama" data-i18n-aria="nav.aria">
+      <div class="container nav__inner">
+        <a href="index.html" class="nav__logo">
+          <span class="nav__logo-icon">A</span><span>AKSEN</span>
+        </a>
+        <div class="nav__links">
+          <a href="index.html"       class="nav__link"        data-i18n="nav.home">Beranda</a>
+          <a href="profile.html"     class="nav__link"        data-i18n="nav.profile">Profil</a>
+          <a href="program.html"     class="nav__link"        data-i18n="nav.programs">Program</a>
+          <a href="publication.html" class="nav__link active" data-i18n="nav.publications">Publikasi</a>
+          <a href="toko.html"        class="nav__link"        >Toko Buku</a>
+          <a href="contact.html"     class="nav__link"        data-i18n="nav.contact">Kontak</a>
+        </div>
+        <button class="lang-toggle" data-lang-toggle data-active-lang="id" aria-label="Beralih ke Bahasa Inggris">
+          <span class="lang-toggle__pill"></span>
+          <span class="lang-toggle__label">ID</span>
+          <span class="lang-toggle__label">EN</span>
+        </button>
+        <a href="contact.html" class="nav__cta" data-i18n="nav.cta">Hubungi Kami</a>
+        <button class="nav__toggle" data-menu-toggle aria-label="Buka menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="nav__mobile" data-mobile-menu>
+    <a href="index.html"       data-i18n="nav.home">Beranda</a>
+    <a href="profile.html"     data-i18n="nav.profile">Profil</a>
+    <a href="program.html"     data-i18n="nav.programs">Program</a>
+    <a href="publication.html" data-i18n="nav.publications">Publikasi</a>
+    <a href="toko.html"                                   >Toko Buku</a>
+    <a href="contact.html"     data-i18n="nav.contact">Kontak</a>
+    <button class="lang-toggle" data-lang-toggle data-active-lang="id" aria-label="Ganti bahasa">
+      <span class="lang-toggle__pill"></span>
+      <span class="lang-toggle__label">ID</span>
+      <span class="lang-toggle__label">EN</span>
+    </button>
+  </div>
+
+  <main id="main" role="main">
+
+    <!-- ═══════════════ PAGE HERO | wp:cover -->
+    <section class="page-hero">
+      <div class="page-hero__pattern"></div>
+      <div class="geo-shape geo-shape--1"></div>
+      <div class="geo-shape geo-shape--2"></div>
+      <div class="container page-hero__content">
+        <div class="page-hero__breadcrumb">
+          <a href="index.html" data-i18n="common.home">Beranda</a>
+          <span>›</span>
+          <span data-i18n="nav.publications">Publikasi</span>
+        </div>
+        <h1 class="page-hero__title" data-i18n="pub.hero.title">Publikasi &amp; Riset</h1>
+        <p class="page-hero__text" data-i18n="pub.hero.text">
+          Karya ilmiah, artikel, dan laporan penelitian dari tim akademisi AKSEN untuk masyarakat luas.
+        </p>
+      </div>
+    </section>
+
+    <!-- ═══════════════ FEATURED PUBLICATIONS HERO | Artikel Terbaru -->
+    <section class="section section--dark pub-hero-section" id="featured">
+      <div class="container">
+        <div class="pub-hero-header" data-reveal>
+          <span class="section-label">Publikasi Terbaru</span>
+          <h2 class="section-title">Artikel &amp; Riset Unggulan</h2>
+        </div>
+        <div class="pub-hero-grid" data-reveal-stagger>
+
+          <!-- Featured Article (large left) -->
+          <article class="pub-feature-card pub-feature-card--main">
+            <div class="pub-feature-card__visual" style="background:linear-gradient(135deg,#1D4ED8,#1E3A8A)">
+              <div class="pub-feature-card__emoji">📊</div>
+              <div class="pub-feature-card__overlay"></div>
+            </div>
+            <div class="pub-feature-card__body">
+              <span class="pub-feature-card__type">Laporan Penelitian</span>
+              <h3 class="pub-feature-card__title">Laporan Kajian Sosial Kemasyarakatan 2024</h3>
+              <p class="pub-feature-card__excerpt">Analisis komprehensif kondisi sosial kemasyarakatan dan rekomendasi kebijakan berbasis data lapangan dari 12 wilayah di Indonesia.</p>
+              <div class="pub-feature-card__meta">
+                <span>Tim Peneliti AKSEN</span>
+                <span>·</span>
+                <span>2024</span>
+              </div>
+              <a href="#" class="pub-feature-card__cta">
+                Baca Selengkapnya
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Side Articles (stacked right) -->
+          <div class="pub-feature-side">
+            <article class="pub-feature-card pub-feature-card--side">
+              <div class="pub-feature-card__side-visual" style="background:linear-gradient(135deg,#7C3AED,#6D28D9)">
+                <div class="pub-feature-card__emoji">📖</div>
+              </div>
+              <div class="pub-feature-card__body">
+                <span class="pub-feature-card__type">Artikel Ilmiah</span>
+                <h3 class="pub-feature-card__title">Moderasi Beragama dan Penguatan Sosial Masyarakat</h3>
+                <div class="pub-feature-card__meta">
+                  <span>Dr. Wardah Nuroniyah</span>
+                  <span>·</span>
+                  <span>2024</span>
+                </div>
+                <a href="#" class="pub-feature-card__cta">Baca →</a>
+              </div>
+            </article>
+            <article class="pub-feature-card pub-feature-card--side">
+              <div class="pub-feature-card__side-visual" style="background:linear-gradient(135deg,#D97706,#B45309)">
+                <div class="pub-feature-card__emoji">📚</div>
+              </div>
+              <div class="pub-feature-card__body">
+                <span class="pub-feature-card__type">Buku &amp; Modul</span>
+                <h3 class="pub-feature-card__title">Panduan Academic Writing untuk Praktisi Sosial</h3>
+                <div class="pub-feature-card__meta">
+                  <span>Latif Fauzi, Ph.D</span>
+                  <span>·</span>
+                  <span>2024</span>
+                </div>
+                <a href="#" class="pub-feature-card__cta">Unduh →</a>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ FILTER TABS | wp:group -->
+    <section class="section" id="publications">
+      <div class="container">
+
+        <!-- Filter Tabs -->
+        <!-- wp:group {"className":"pub-filters"} -->
+        <div class="pub-filters" data-reveal>
+          <button class="pub-filter active" data-filter="all">
+            <span data-i18n="pub.filter.all">Semua</span>
+          </button>
+          <button class="pub-filter" data-filter="artikel">
+            <span data-i18n="pub.filter.art">Artikel Ilmiah</span>
+          </button>
+          <button class="pub-filter" data-filter="laporan">
+            <span data-i18n="pub.filter.lap">Laporan Penelitian</span>
+          </button>
+          <button class="pub-filter" data-filter="buku">
+            <span data-i18n="pub.filter.buku">Buku &amp; Modul</span>
+          </button>
+          <button class="pub-filter" data-filter="opini">
+            <span data-i18n="pub.filter.opini">Opini &amp; Esai</span>
+          </button>
+        </div>
+        <!-- /wp:group -->
+
+        <!-- Publication Grid -->
+        <!-- wp:query {"className":"pub-grid"} -->
+        <div class="pub-grid" id="pubGrid" data-reveal-stagger style="margin-top:var(--space-12)">
+
+          <!-- Placeholder Card 1 -->
+          <article class="card pub-item" data-category="laporan">
+            <div class="card__image-wrapper">
+              <div class="card__image" style="aspect-ratio:16/10;background:linear-gradient(135deg,#1D4ED8,#1E3A8A);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.2);font-size:2.5rem">📊</div>
+            </div>
+            <div class="card__body">
+              <span class="card__tag">Laporan Penelitian</span>
+              <h3 class="card__title">Laporan Kajian Sosial Kemasyarakatan 2024</h3>
+              <p class="card__text">Analisis komprehensif kondisi sosial kemasyarakatan dan rekomendasi kebijakan berbasis data lapangan dari 12 wilayah di Indonesia.</p>
+              <div class="card__meta">
+                <span>Tim Peneliti AKSEN</span>
+                <span>·</span>
+                <span>2024</span>
+              </div>
+              <div class="card__actions">
+                <a href="#" class="btn btn--sm btn--secondary" data-i18n="pub.readmore">Baca Selengkapnya</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Placeholder Card 2 -->
+          <article class="card pub-item" data-category="artikel">
+            <div class="card__image-wrapper">
+              <div class="card__image" style="aspect-ratio:16/10;background:linear-gradient(135deg,#1D4ED8,#2563EB);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.2);font-size:2.5rem">📖</div>
+            </div>
+            <div class="card__body">
+              <span class="card__tag">Artikel Ilmiah</span>
+              <h3 class="card__title">Moderasi Beragama dan Penguatan Sosial Masyarakat</h3>
+              <p class="card__text">Kajian akademik tentang peran moderasi beragama dalam membangun kohesi sosial dan mencegah konflik komunal di masyarakat majemuk.</p>
+              <div class="card__meta">
+                <span>Dr. Wardah Nuroniyah</span>
+                <span>·</span>
+                <span>2024</span>
+              </div>
+              <div class="card__actions">
+                <a href="#" class="btn btn--sm btn--secondary" data-i18n="pub.readmore">Baca Selengkapnya</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Placeholder Card 3 -->
+          <article class="card pub-item" data-category="buku">
+            <div class="card__image-wrapper">
+              <div class="card__image" style="aspect-ratio:16/10;background:linear-gradient(135deg,#C8A951,#A88B38);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.2);font-size:2.5rem">📚</div>
+            </div>
+            <div class="card__body">
+              <span class="card__tag">Buku &amp; Modul</span>
+              <h3 class="card__title">Panduan Academic Writing untuk Praktisi Sosial</h3>
+              <p class="card__text">Modul pelatihan penulisan akademik yang dirancang khusus untuk praktisi sosial dan aktivis komunitas yang ingin mempublikasikan pengalaman lapangan.</p>
+              <div class="card__meta">
+                <span>Latif Fauzi, MSI, MA, Ph.D</span>
+                <span>·</span>
+                <span>2024</span>
+              </div>
+              <div class="card__actions">
+                <a href="#" class="btn btn--sm btn--secondary" data-i18n="pub.readmore">Baca Selengkapnya</a>
+                <a href="#" class="btn btn--sm btn--outline" data-i18n="pub.download">Unduh PDF</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Placeholder Card 4 -->
+          <article class="card pub-item" data-category="opini">
+            <div class="card__image-wrapper">
+              <div class="card__image" style="aspect-ratio:16/10;background:linear-gradient(135deg,#880E4F,#AD1457);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.2);font-size:2.5rem">✍️</div>
+            </div>
+            <div class="card__body">
+              <span class="card__tag">Opini &amp; Esai</span>
+              <h3 class="card__title">UMKM dan Ketahanan Ekonomi Keluarga di Era Digital</h3>
+              <p class="card__text">Refleksi kritis terhadap peluang dan tantangan digitalisasi UMKM dalam konteks ketahanan ekonomi keluarga Indonesia di era transformasi digital.</p>
+              <div class="card__meta">
+                <span>Mulyono Lodji, MSI.</span>
+                <span>·</span>
+                <span>2024</span>
+              </div>
+              <div class="card__actions">
+                <a href="#" class="btn btn--sm btn--secondary" data-i18n="pub.readmore">Baca Selengkapnya</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Placeholder Card 5 -->
+          <article class="card pub-item" data-category="laporan">
+            <div class="card__image-wrapper">
+              <div class="card__image" style="aspect-ratio:16/10;background:linear-gradient(135deg,#2E7D32,#388E3C);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.2);font-size:2.5rem">🌿</div>
+            </div>
+            <div class="card__body">
+              <span class="card__tag">Laporan Penelitian</span>
+              <h3 class="card__title">Laporan Dampak Program Lingkungan Hidup Komunitas</h3>
+              <p class="card__text">Evaluasi dampak program edukasi dan aksi nyata lingkungan hidup yang dilaksanakan AKSEN bersama komunitas lokal selama 2023–2024.</p>
+              <div class="card__meta">
+                <span>Divisi Penelitian AKSEN</span>
+                <span>·</span>
+                <span>2024</span>
+              </div>
+              <div class="card__actions">
+                <a href="#" class="btn btn--sm btn--secondary" data-i18n="pub.readmore">Baca Selengkapnya</a>
+                <a href="#" class="btn btn--sm btn--outline" data-i18n="pub.download">Unduh PDF</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Placeholder Card 6 -->
+          <article class="card pub-item" data-category="artikel">
+            <div class="card__image-wrapper">
+              <div class="card__image" style="aspect-ratio:16/10;background:linear-gradient(135deg,#4A148C,#6A1B9A);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.2);font-size:2.5rem">⚖️</div>
+            </div>
+            <div class="card__body">
+              <span class="card__tag">Artikel Ilmiah</span>
+              <h3 class="card__title">Advokasi Hukum Keluarga dalam Perspektif Gender</h3>
+              <p class="card__text">Analisis akademik tentang tantangan dan strategi advokasi hukum keluarga yang berperspektif gender dalam sistem hukum Indonesia.</p>
+              <div class="card__meta">
+                <span>Dr. Muflihah Wijayati, MA</span>
+                <span>·</span>
+                <span>2023</span>
+              </div>
+              <div class="card__actions">
+                <a href="#" class="btn btn--sm btn--secondary" data-i18n="pub.readmore">Baca Selengkapnya</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+        <!-- /wp:query -->
+
+        <!-- View All -->
+        <div class="text-center" style="margin-top:var(--space-12)" data-reveal>
+          <a href="#" class="btn btn--secondary btn--lg" data-i18n="common.viewall">Lihat Semua</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════ CTA MODERN | Kolaborasi Penelitian -->
+    <section class="cta-modern" id="collab">
+      <div class="cta-modern__grid"></div>
+      <div class="container cta-modern__inner">
+
+        <div class="cta-modern__content" data-reveal>
+          <div class="cta-modern__badge">
+            <span class="pulse"></span>
+            Kolaborasi Penelitian
+          </div>
+          <h2 class="cta-modern__title">Ingin Berkolaborasi<br>dalam <em>Penelitian?</em></h2>
+          <p class="cta-modern__text">AKSEN terbuka untuk kerjasama penelitian, publikasi bersama, dan pelatihan academic writing. Mari kontribusikan ilmu untuk masyarakat.</p>
+          <div class="cta-modern__btns">
+            <a href="contact.html" class="btn btn--accent btn--lg">
+              Hubungi Kami
+              <svg class="btn__arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="program.html" class="btn btn--ghost btn--lg">Lihat Program</a>
+          </div>
+        </div>
+
+        <div class="cta-modern__wa-panel" data-reveal>
+          <p class="cta-modern__wa-label">Hubungi via WhatsApp</p>
+          <a href="https://wa.me/6282130000023" target="_blank" rel="noopener" class="wa-card">
+            <div class="wa-card__icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </div>
+            <div class="wa-card__info">
+              <span class="wa-card__sublabel">WhatsApp</span>
+              <span class="wa-card__num">+62 821 3000 0023</span>
+            </div>
+            <svg class="wa-card__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="https://wa.me/6282315840110" target="_blank" rel="noopener" class="wa-card">
+            <div class="wa-card__icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </div>
+            <div class="wa-card__info">
+              <span class="wa-card__sublabel">WhatsApp</span>
+              <span class="wa-card__num">+62 823 1584 110</span>
+            </div>
+            <svg class="wa-card__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════ FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="nav__logo" style="color:var(--c-white);margin-bottom:var(--space-3)">
+            <span class="nav__logo-icon">A</span><span>AKSEN</span>
+          </a>
+          <p data-i18n="footer.about.text">Akademika Semesta Nusantara (AKSEN) adalah lembaga yang mewadahi ilmuwan, praktisi, dan aktivis sosial dalam mencarikan solusi atas persoalan kemasyarakatan.</p>
+          <div class="footer__social">
+            <a href="https://www.instagram.com/akademikasemestanusantara" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__title" data-i18n="footer.nav.title">Navigasi</h4>
+          <div class="footer__links">
+            <a href="index.html"       data-i18n="nav.home">Beranda</a>
+            <a href="profile.html"     data-i18n="nav.profile">Profil</a>
+            <a href="program.html"     data-i18n="nav.programs">Program</a>
+            <a href="publication.html" data-i18n="nav.publications">Publikasi</a>
+            <a href="toko.html"                                   >Toko Buku</a>
+            <a href="contact.html"     data-i18n="nav.contact">Kontak</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__title" data-i18n="footer.contact.title">Kontak</h4>
+          <div class="footer__links">
+            <a href="https://wa.me/6282130000023" target="_blank" rel="noopener">+62 821 3000 0023</a>
+            <a href="https://wa.me/6282315840110" target="_blank" rel="noopener">+62 823 1584 110</a>
+            <a href="mailto:akademikasemestanusantara@gmail.com">akademikasemestanusantara@gmail.com</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__title" data-i18n="footer.social.title">Media Sosial</h4>
+          <div class="footer__links">
+            <a href="https://www.instagram.com/akademikasemestanusantara" target="_blank" rel="noopener">@akademikasemestanusantara</a>
+            <a href="https://www.aksen.or.id" target="_blank" rel="noopener">www.aksen.or.id</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span data-i18n="footer.copyright">© 2024 Akademika Semesta Nusantara. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"         defer></script>
+  <script src="js/main.js"         defer></script>
+  <script src="js/publication.js"  defer></script>
+</body>
+</html>

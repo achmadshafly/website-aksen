@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hubungi AKSEN — Akademika Semesta Nusantara. Alamat, telepon, email, dan formulir kontak untuk kerjasama, pertanyaan, dan kolaborasi.">
+  <meta name="theme-color" content="#1D4ED8">
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="Kontak | AKSEN — Akademika Semesta Nusantara">
+  <meta property="og:description" content="Hubungi tim AKSEN untuk kerjasama, pelatihan, penelitian, atau konsultasi. Kami siap mendengar.">
+  <meta property="og:url"         content="https://aksen.or.id/contact.html">
+  <meta property="og:image"       content="https://aksen.or.id/assets/images/og-image.jpg">
+  <meta name="twitter:card"  content="summary_large_image">
+  <meta name="twitter:title" content="Kontak | AKSEN">
+  <link rel="canonical" href="https://aksen.or.id/contact.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/i18n.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <title>Kontak | AKSEN — Akademika Semesta Nusantara</title>
+</head>
+<body>
+
+  <div class="loader" id="loader"><div class="loader__spinner"></div></div>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ═══════════════ NAVIGATION -->
+  <header>
+    <nav class="nav" data-nav role="navigation" aria-label="Navigasi utama" data-i18n-aria="nav.aria">
+      <div class="container nav__inner">
+        <a href="index.html" class="nav__logo">
+          <span class="nav__logo-icon">A</span><span>AKSEN</span>
+        </a>
+        <div class="nav__links">
+          <a href="index.html"       class="nav__link"        data-i18n="nav.home">Beranda</a>
+          <a href="profile.html"     class="nav__link"        data-i18n="nav.profile">Profil</a>
+          <a href="program.html"     class="nav__link"        data-i18n="nav.programs">Program</a>
+          <a href="publication.html" class="nav__link"        data-i18n="nav.publications">Publikasi</a>
+          <a href="toko.html"        class="nav__link"        >Toko Buku</a>
+          <a href="contact.html"     class="nav__link active" data-i18n="nav.contact">Kontak</a>
+        </div>
+        <button class="lang-toggle" data-lang-toggle data-active-lang="id" aria-label="Beralih ke Bahasa Inggris">
+          <span class="lang-toggle__pill"></span>
+          <span class="lang-toggle__label">ID</span>
+          <span class="lang-toggle__label">EN</span>
+        </button>
+        <a href="contact.html" class="nav__cta" data-i18n="nav.cta">Hubungi Kami</a>
+        <button class="nav__toggle" data-menu-toggle aria-label="Buka menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="nav__mobile" data-mobile-menu>
+    <a href="index.html"       data-i18n="nav.home">Beranda</a>
+    <a href="profile.html"     data-i18n="nav.profile">Profil</a>
+    <a href="program.html"     data-i18n="nav.programs">Program</a>
+    <a href="publication.html" data-i18n="nav.publications">Publikasi</a>
+    <a href="toko.html"                                   >Toko Buku</a>
+    <a href="contact.html"     data-i18n="nav.contact">Kontak</a>
+    <button class="lang-toggle" data-lang-toggle data-active-lang="id" aria-label="Ganti bahasa">
+      <span class="lang-toggle__pill"></span>
+      <span class="lang-toggle__label">ID</span>
+      <span class="lang-toggle__label">EN</span>
+    </button>
+  </div>
+
+  <main id="main" role="main">
+
+    <!-- ═══════════════ PAGE HERO | wp:cover -->
+    <section class="page-hero">
+      <div class="page-hero__pattern"></div>
+      <div class="geo-shape geo-shape--1"></div>
+      <div class="geo-shape geo-shape--2"></div>
+      <div class="container page-hero__content">
+        <div class="page-hero__breadcrumb">
+          <a href="index.html" data-i18n="common.home">Beranda</a>
+          <span>›</span>
+          <span data-i18n="nav.contact">Kontak</span>
+        </div>
+        <h1 class="page-hero__title" data-i18n="contact.hero.title">Hubungi Kami</h1>
+        <p class="page-hero__text" data-i18n="contact.hero.text">
+          Kami siap mendengar dan berkolaborasi. Sampaikan pertanyaan, ide, atau ajakan kerjasama Anda kepada tim AKSEN.
+        </p>
+      </div>
+    </section>
+
+    <!-- ═══════════════ QUICK WHATSAPP STRIP -->
+    <div class="contact-quick">
+      <div class="container contact-quick__inner">
+        <span class="contact-quick__label">Hubungi Langsung via WhatsApp</span>
+        <div class="contact-quick__btns">
+          <a href="https://wa.me/6282130000023" target="_blank" rel="noopener" class="wa-btn-lg">
+            <div class="wa-btn-lg__icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </div>
+            <div class="wa-btn-lg__info">
+              <span class="wa-btn-lg__label">WhatsApp Langsung</span>
+              <span class="wa-btn-lg__num">+62 821 3000 0023</span>
+            </div>
+          </a>
+          <a href="https://wa.me/6282315840110" target="_blank" rel="noopener" class="wa-btn-lg">
+            <div class="wa-btn-lg__icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </div>
+            <div class="wa-btn-lg__info">
+              <span class="wa-btn-lg__label">WhatsApp Langsung</span>
+              <span class="wa-btn-lg__num">+62 823 1584 110</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════ CONTACT SPLIT LAYOUT | wp:columns -->
+    <section class="contact-split" id="contact">
+
+      <!-- Left Panel: Dark Navy with Info -->
+      <div class="contact-split__left">
+        <div class="contact-split__left-inner">
+          <div class="contact-split__brand">
+            <div class="contact-split__logo">A</div>
+            <div>
+              <p class="contact-split__org">AKSEN</p>
+              <p class="contact-split__tagline">Akademika Semesta Nusantara</p>
+            </div>
+          </div>
+
+          <div class="contact-split__intro">
+            <h2 data-i18n="contact.info.title">Informasi Kontak</h2>
+            <p>Kami siap mendengar dan berkolaborasi. Sampaikan ide atau ajakan kerjasama Anda kepada tim kami.</p>
+          </div>
+
+          <!-- WhatsApp Cards -->
+          <div class="contact-wa-cards">
+            <p class="contact-split__item-label" style="margin-bottom:var(--space-2)">WhatsApp</p>
+            <a href="https://wa.me/6282130000023" target="_blank" rel="noopener" class="contact-wa-item">
+              <div class="contact-wa-item__icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              </div>
+              <div class="contact-wa-item__text">
+                <span class="contact-wa-item__label">Chat WhatsApp</span>
+                <span class="contact-wa-item__num">+62 821 3000 0023</span>
+              </div>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="https://wa.me/6282315840110" target="_blank" rel="noopener" class="contact-wa-item">
+              <div class="contact-wa-item__icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              </div>
+              <div class="contact-wa-item__text">
+                <span class="contact-wa-item__label">Chat WhatsApp</span>
+                <span class="contact-wa-item__num">+62 823 1584 110</span>
+              </div>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+
+          <div class="contact-split__items">
+            <div class="contact-split__item">
+              <div class="contact-split__item-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <p class="contact-split__item-label" data-i18n="contact.email.label">Email</p>
+                <a href="mailto:akademikasemestanusantara@gmail.com" class="contact-split__item-value">akademikasemestanusantara@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-split__item">
+              <div class="contact-split__item-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <p class="contact-split__item-label" data-i18n="contact.address.label">Alamat</p>
+                <p class="contact-split__item-value">Baileys City Apartemen, Jl. Dewi Sartika No. 31</p>
+                <p class="contact-split__item-value">Ciputat, Tangerang Selatan, Banten 15411</p>
+              </div>
+            </div>
+            <div class="contact-split__item">
+              <div class="contact-split__item-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+              </div>
+              <div>
+                <p class="contact-split__item-label" data-i18n="contact.social.label">Instagram</p>
+                <a href="https://www.instagram.com/akademikasemestanusantara" target="_blank" rel="noopener" class="contact-split__item-value">@akademikasemestanusantara</a>
+              </div>
+            </div>
+            <div class="contact-split__item">
+              <div class="contact-split__item-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
+              </div>
+              <div>
+                <p class="contact-split__item-label">Website</p>
+                <a href="https://www.aksen.or.id" target="_blank" rel="noopener" class="contact-split__item-value">www.aksen.or.id</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Credibility Stats -->
+          <div class="contact-split__stats">
+            <div class="contact-split__stat">
+              <span class="contact-split__stat-num">3</span>
+              <span class="contact-split__stat-label">Program Utama</span>
+            </div>
+            <div class="contact-split__stat">
+              <span class="contact-split__stat-num">6</span>
+              <span class="contact-split__stat-label">Sektor Kerja</span>
+            </div>
+            <div class="contact-split__stat">
+              <span class="contact-split__stat-num">12+</span>
+              <span class="contact-split__stat-label">Publikasi</span>
+            </div>
+          </div>
+
+          <!-- Trust indicators -->
+          <div class="contact-trust">
+            <span class="contact-trust__icon">⚖️</span>
+            <div class="contact-trust__text">
+              <strong>Lembaga Terdaftar Resmi</strong>
+              Berbadan hukum &amp; beroperasi secara transparan di Indonesia
+            </div>
+          </div>
+          <div class="contact-trust">
+            <span class="contact-trust__icon">🕐</span>
+            <div class="contact-trust__text">
+              <strong>Respons Cepat</strong>
+              Tim kami merespons dalam 1 × 24 jam kerja
+            </div>
+          </div>
+
+          <!-- Map -->
+          <div class="contact-split__map">
+            <iframe
+              title="Lokasi AKSEN — Baileys City Apartemen, Ciputat"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.3478741888765!2d106.7421833147695!3d-6.338476995370765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ef14b7bdb88b%3A0xe18cc4474f1b5b89!2sJl.%20Dewi%20Sartika%20No.31%2C%20Ciputat%2C%20Kec.%20Ciputat%2C%20Kota%20Tangerang%20Selatan%2C%20Banten!5e0!3m2!1sid!2sid!4v1670000000000!5m2!1sid!2sid"
+              width="100%" height="200" style="border:0;border-radius:var(--radius-lg);filter:grayscale(30%)" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Panel: White Form -->
+      <div class="contact-split__right">
+        <div class="contact-split__right-inner">
+          <div class="contact-split__form-header">
+            <span class="section-label" style="color:var(--c-primary)">Formulir Kontak</span>
+            <h2 data-i18n="contact.form.title">Kirim Pesan</h2>
+            <p data-i18n="contact.form.text">Isi formulir di bawah ini dan tim kami akan menghubungi Anda secepatnya — biasanya dalam 1 × 24 jam kerja.</p>
+          </div>
+
+          <form class="contact-form" id="contactForm" novalidate>
+
+            <div class="form-row">
+              <div class="form-group form-group--float">
+                <input type="text" id="nama" name="nama" class="form-input"
+                  data-i18n-placeholder="contact.form.name.ph" placeholder=" "
+                  autocomplete="name" required>
+                <label for="nama" class="form-label">
+                  <span data-i18n="contact.form.name">Nama Lengkap</span>
+                  <span class="form-required" aria-hidden="true">*</span>
+                </label>
+                <span class="form-error" id="namaError"></span>
+              </div>
+
+              <div class="form-group form-group--float">
+                <input type="email" id="email" name="email" class="form-input"
+                  data-i18n-placeholder="contact.form.email.ph" placeholder=" "
+                  autocomplete="email" required>
+                <label for="email" class="form-label">
+                  <span data-i18n="contact.form.email">Email</span>
+                  <span class="form-required" aria-hidden="true">*</span>
+                </label>
+                <span class="form-error" id="emailError"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group form-group--float">
+                <input type="tel" id="telepon" name="telepon" class="form-input"
+                  data-i18n-placeholder="contact.form.phone.ph" placeholder=" "
+                  autocomplete="tel">
+                <label for="telepon" class="form-label">
+                  <span data-i18n="contact.form.phone">Nomor Telepon / WhatsApp</span>
+                </label>
+              </div>
+
+              <div class="form-group">
+                <label for="keperluan" class="form-label">
+                  <span data-i18n="contact.form.purpose">Keperluan</span>
+                  <span class="form-required" aria-hidden="true">*</span>
+                </label>
+                <div class="form-select-wrapper">
+                  <select id="keperluan" name="keperluan" class="form-input form-select" required>
+                    <option value="" disabled selected data-i18n="contact.form.purpose.ph">Pilih keperluan...</option>
+                    <option value="kerjasama"   data-i18n="contact.form.purpose.collab">Kerjasama / Kolaborasi</option>
+                    <option value="pelatihan"   data-i18n="contact.form.purpose.train">Pelatihan / Workshop</option>
+                    <option value="penelitian"  data-i18n="contact.form.purpose.research">Penelitian Bersama</option>
+                    <option value="konsultasi"  data-i18n="contact.form.purpose.consult">Konsultasi</option>
+                    <option value="pertanyaan"  data-i18n="contact.form.purpose.info">Pertanyaan Umum</option>
+                    <option value="lainnya"     data-i18n="contact.form.purpose.other">Lainnya</option>
+                  </select>
+                  <svg class="form-select-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                </div>
+                <span class="form-error" id="keperluanError"></span>
+              </div>
+            </div>
+
+            <div class="form-group form-group--float">
+              <textarea id="pesan" name="pesan" class="form-input form-textarea" rows="5"
+                data-i18n-placeholder="contact.form.message.ph"
+                placeholder=" "
+                required></textarea>
+              <label for="pesan" class="form-label form-label--textarea">
+                <span data-i18n="contact.form.message">Pesan</span>
+                <span class="form-required" aria-hidden="true">*</span>
+              </label>
+              <span class="form-error" id="pesanError"></span>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--lg btn--full" id="submitBtn">
+              <span class="btn-text" data-i18n="contact.form.send">Kirim Pesan</span>
+              <span class="btn-loading" hidden aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="spin"><circle cx="12" cy="12" r="10" stroke-opacity=".25"/><path d="M12 2a10 10 0 010 20" stroke-opacity=".75"/></svg>
+              </span>
+            </button>
+
+            <!-- Or divider -->
+            <div class="form-or-divider">
+              <div class="form-or-divider__line"></div>
+              <span class="form-or-divider__text">ATAU LANGSUNG CHAT</span>
+              <div class="form-or-divider__line"></div>
+            </div>
+
+            <!-- WA direct buttons inside form -->
+            <div class="form-wa-grid">
+              <a href="https://wa.me/6282130000023" target="_blank" rel="noopener" class="form-wa-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                <div class="form-wa-btn__text">
+                  <span class="form-wa-btn__label">WhatsApp</span>
+                  <span class="form-wa-btn__num">+62 821 3000 0023</span>
+                </div>
+              </a>
+              <a href="https://wa.me/6282315840110" target="_blank" rel="noopener" class="form-wa-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                <div class="form-wa-btn__text">
+                  <span class="form-wa-btn__label">WhatsApp</span>
+                  <span class="form-wa-btn__num">+62 823 1584 110</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="form-success" id="formSuccess" hidden role="alert">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span data-i18n="contact.form.success">Pesan Anda berhasil dikirim! Kami akan menghubungi Anda segera.</span>
+            </div>
+
+          </form>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ═══════════════ FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="nav__logo" style="color:var(--c-white);margin-bottom:var(--space-3)">
+            <span class="nav__logo-icon">A</span><span>AKSEN</span>
+          </a>
+          <p data-i18n="footer.about.text">Akademika Semesta Nusantara (AKSEN) adalah lembaga yang mewadahi ilmuwan, praktisi, dan aktivis sosial dalam mencarikan solusi atas persoalan kemasyarakatan.</p>
+          <div class="footer__social">
+            <a href="https://www.instagram.com/akademikasemestanusantara" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__title" data-i18n="footer.nav.title">Navigasi</h4>
+          <div class="footer__links">
+            <a href="index.html"       data-i18n="nav.home">Beranda</a>
+            <a href="profile.html"     data-i18n="nav.profile">Profil</a>
+            <a href="program.html"     data-i18n="nav.programs">Program</a>
+            <a href="publication.html" data-i18n="nav.publications">Publikasi</a>
+            <a href="toko.html"                                   >Toko Buku</a>
+            <a href="contact.html"     data-i18n="nav.contact">Kontak</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__title" data-i18n="footer.contact.title">Kontak</h4>
+          <div class="footer__links">
+            <a href="https://wa.me/6282130000023" target="_blank" rel="noopener">+62 821 3000 0023</a>
+            <a href="https://wa.me/6282315840110" target="_blank" rel="noopener">+62 823 1584 110</a>
+            <a href="mailto:akademikasemestanusantara@gmail.com">akademikasemestanusantara@gmail.com</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__title" data-i18n="footer.social.title">Media Sosial</h4>
+          <div class="footer__links">
+            <a href="https://www.instagram.com/akademikasemestanusantara" target="_blank" rel="noopener">@akademikasemestanusantara</a>
+            <a href="https://www.aksen.or.id" target="_blank" rel="noopener">www.aksen.or.id</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span data-i18n="footer.copyright">© 2024 Akademika Semesta Nusantara. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"      defer></script>
+  <script src="js/main.js"      defer></script>
+  <script src="js/contact.js"   defer></script>
+</body>
+</html>
